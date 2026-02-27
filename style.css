@@ -1,0 +1,90 @@
+/* ===================================================
+   VALHALLA-BRIKETTEN — Design System
+   "Blå Spejder-Identitet"
+   Alfa Slab One + Source Sans 3 (Proxima Nova stand-in)
+   =================================================== */
+
+/* --- CSS Custom Properties --- */
+:root {
+  /* Colors — Blå spejder-palette */
+  --bg-white: #F8F9FC;
+  --bg-cream: #EDF1F7;
+  --text-primary: #1A1A2E;
+  --text-muted: #5A6478;
+  --text-light: #8E99AB;
+  --brand-teal: #003366;
+  --brand-amber: #0094F0;
+  --accent-coral: #EA636F;
+  --highlight-sage: #6EBCCD;
+  --card-white: #FFFFFF;
+  --card-border: #DCE2EB;
+  --dark-bg: #001A33;
+  --dark-card: #002244;
+  --dark-card-border: rgba(110,188,205,0.15);
+
+  /* Typography */
+  --font-display: 'Alfa Slab One', Georgia, serif;
+  --font-body: 'Source Sans 3', 'proxima-nova', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-pad: 100px;
+  --container-max: 1200px;
+
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 100px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.03);
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg-white);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  background: none;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
